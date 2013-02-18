@@ -1,0 +1,222 @@
+Pthreads (1.12) stable; urgency=low
+
+  * Das Script wurde an diesem Punkt in ein git Repository eingecheckt.
+    Siehe dort für das weitergehende Changelog
+  * "Pthreads" (S.1), Script fängt an mit einer vulgären Erklärung, was
+                      Pthreads sind
+  * "Einführung" (S.2), Verweis auf Geschichte von Pthreads eingefügt
+  * "Boss / Worker Model" et al. (S.40ff), Farbe von Programm auf grün
+                                           gewechselt und es von den
+                                           Ressourcen zu differenzieren
+  * "Boss / Worker Model" (S.41), Warnung hinzugefügt
+  * "Datenbuffering - Code" (S.54), Code verbessert
+
+ -- Tomas Pospisek <tpo_deb@sourcepole.ch>  Mon, 18 Feb 2013 16:37:44 +0100
+
+Pthreads (1.11) stable; urgency=low
+
+  * "Konkurrentes Programmieren" (S.20), angepasst an standard Layout
+
+ -- Tomas Pospisek <tpo_deb@sourcepole.ch>  Mon, 28 Jun 2010 10:58:19 +0200
+
+Pthreads (1.10) stable; urgency=low
+
+  * kleine Rechtschreibekorrekturen hier und da
+  * "Exit Status & Rückgabewert" (S.27), hier geht es um den Rückgabewert der
+                                         die Funktion, welche pthread_create
+                                         ausführt und *nicht* um pthread_create
+                                         selbst
+  * "Bibliotheksaufrufe & Fehler" (S.29), (Nonsens?-)Satz gelöscht
+
+ -- Tomas Pospisek <tpo_deb@sourcepole.ch>  Mon, 02 Mar 2009 17:44:41 +0100
+
+Pthreads (1.9) stable; urgency=low
+
+  * "Konkurrentes Programmieren" (S.17), die Bemerkung, dass das System
+                                         Konkurrentes Programmieren
+                                         unterstützen muss rausgenommen,
+                                         da's nicht stimmt
+  * "Synchronization" (S.22), dito für die Behauptung "Mutex muss von
+                              System zur Verfügung gestellt werden"
+  * "Exit Status & Rückgabewert", S.27, pthread_join Deklaration hinzugefügt
+  * "Bibliotheksaufrufe & Fehler", S.29, perror hinzugefügt
+  * "Boss / Worker Threadpools", S.42, Code und Text gesplittet, da's nicht
+                                       genug Platz auf einer Seite hatte
+  * "Peer Model", S.45, Split auf zwei Seiten
+  * "Bankomat Beispiel", S.55, S.56, s/Unix Sockets/Sockets/
+  * "Multithreadeter Bankomat", S.66, Seite gesplittet
+  * "Mutex - Alternativen", S.79, Seite gesplittet
+  * "Bankomat", S.89, S.90, s/general/global/ Lock
+  * "Bankomat", S.91, s/num_active_mutex/mutex/
+  * "Management von Pthreads", S.94, Keys ein wenig klarer beschrieben
+  * "Management von Pthreads", S.99, Seite gesplittet
+  * "Cancellation Points", S.125, die 4 existierenden Pthread Cancel Points
+                                  aufgelistet. Auf Syscall Cancel Points
+                                  hingewiesen.
+  * "Cancellation im Bankomat", S.129, Verweis auf Code hinzugefügt
+  * "Scheduling Prioritäten und Domänen", S.131, Scope statt mit "Bereich" neu
+                                          mit "Stufe" übersetzt
+  * "Scheduling Prioritäten und Domänen", S.131, im Zusammenhang mit
+                                          "Process Scope" und "System Scope"
+                                          auf "green" und "red threads"
+                                          hingewiesen
+  * "Scheduling Stufe und Domäne", S.132, S.133, S.135, S.137, s/Bereich/Stufe/
+  * "Scheduling Stufe und Domäne", S.135, S.137, Schriften kleiner gemacht
+  * "Threadsichere System- und Bibliotheksfunktionen", S.170, split
+  * "Threads und Prozessmanagement", S.175, split
+  * In neuem OOo Format abgespeichert (ODG)
+  * NOT RELEASED
+
+ -- Tomas Pospisek <tpo_deb@sourcepole.ch>  Tue, 30 Oct 2007 17:45:36 +0100
+
+Pthreads (1.8) stable; urgency=low
+
+  * "Bankomat mit Threadpool" (S.89), tpool_(add_)destroy
+  * RELEASED
+
+ -- Tomas Pospisek <tpo_deb@sourcepole.ch>  Tue, 17 Jan 2006 17:17:36 +0100
+
+Pthreads (1.7) stable; urgency=low
+
+  * Neu: "simple.c" (S.10), Fragen zum Programm hinzugefügt
+  * "Was sind Threads?" (S.14), "semantische Definition" hinzugefügt
+  * "Was sind Threads?" (S.14), NT durch Windows ersetzt
+  * "Was sind Threads?" (S.14), Threads haben Kernel-Teil
+  * "Potentieller Parallelismus" (S.15), "Resultat unabhängig von Ausführung"
+    hinzugefügt
+  * "Konkurrentes Programmieren" (S.21), nach Seite 18 verschoben
+  * "Teilen von Ressourcen" (S.23), (b)ei Threads
+  * "Scheduling / Identität" (S.25), Scheduling rausgenommen, wird später
+    detaillierter besprochen
+  * "Bibliotheksafrufe & Fehler" (S.28), erster Satz klarer
+  * "Boss / Worker Model" (S.40), leere Klammern bei Funktionen entfernt,
+    da möglicherweise Argumente übergeben werden...
+  * "Boss / Worker Model Threadpools" (S.41), diverse kleine Korrekturen
+  * RELEASED, Beat Seeliger gewidmet
+
+ -- Tomas Pospisek <tpo_deb@sourcepole.ch>  Thu, 17 Nov 2005 20:29:46 +0100
+
+Pthreads (1.6) stable; urgency=low
+
+  * "(Java) Synchronization" (S.179), Programm korrigiert: notify(All),
+    Konstruktor: (Primitive)Buffer
+
+ -- Tomas Pospisek <tpo_deb@sourcepole.ch>  Tue, 25 Jan 2005 16:45:16 +0100
+
+Pthreads (1.5) stable; urgency=low
+
+  * "Threads und Prozessmanagement" (S.167), Typo: (,) ausser(,) dass nur
+     der aufrufende(n) Thread
+  * "Threads und Prozessmanagement" (S.167), Typo: und die (von) seinen 
+  * "Fork Handling Stacks" (S.168), Typo: Vorbereit(un)g
+  * "Fork Handling Stacks" (S.168), Hinweis auf nächste Seite (Beispiel)
+  * "Fork Handling Stacks" (S.169, S.170), Zeichnungen korrigiert
+  * "Fork Handling Stacks" (S.171), Typo: wenn fork-exec ausgeführt wird(:)
+  * "Multiprozessor Synchronization" (S.173), erster Satz besser formuliert
+  * "(Java) Synchronization" (S.177), Typo: (e)infacher
+  * "(Java) Synchronization" (S.179), Programm klarer gemacht
+
+ -- Tomas Pospisek <tpo_deb@sourcepole.ch>  Tue, 25 Jan 2005 11:05:55 +0100
+
+Pthreads (1.4) unstable; urgency=low
+
+  * "Unabhängikeit der Aufgaben" (S.31) besser formuliert
+  * "Beispiele für mt. Applikationen" (S.36) P2P als Applikation hinzugefügt
+  * "Serieller Bankomat" (S.58) FD_ISSET korrigiert
+  * "Mutex Alternativen" (S.74), mit Attribut PTHREAD_MUTEX_RECURSIVE
+     ergänzt   
+  * "Lock Granularität" (S.75), Typo: (D)atenstrukturen
+  * "Bedingungsvariablen" (S.79), BV ist nicht wirklich eine _Variable_
+  * "Bedingungsvariablen" (S.80), Typo: (S)tandard (L)ibrary (S)ignale
+  * "Bedingungsvariablen" (S.81), Typo: Stand(ard)
+  * "Leser/Schreiber Locks" (S.82), p86ff
+  * "Bankomat" (S.84), p92 eingefügt
+  * "Comm. Init Mutex" (S.106), Typo: wir(d)
+  * "Comm. Init mit pthread_once" (S.107), Typo: init(ed)
+  * "Keys - Thread-spezifische Daten" (S.108), Typo: (h)acken,
+     Thread(-)spezifisch, Beschreibung Bibliothek und Key erweitert
+  * "Keys" (S.110), forwärts Hinweis auf Beispiel mit Keys
+  * "Keys" (S.111), Typo: (b)ei
+  * "Bankomat Keys" (S.115), Pfeil ging nicht von Destruktor ab
+  * "Cancellation in Bankomat" (S.121), Typo: resp(o)nse
+  * "Cancellation in Bankomat" (S.122), Typo: die(s)
+  * "Scheduling Prioritäten und Domänen" (S.124), Typo: (das) System-Scope
+  * "Scheduling Policy" (S.127), Kommafehler
+  * "Benutzung von Policies und Prioritäten" (S.136), Argumente bei
+     pthread_create hinzugefügt
+  * "Priority Ceiling" (S.140), Typo: di(e)jenigen
+  * "Pthreads und Unix" (S.144), Typo/Deutsch: Multiprozessor (Speicher)
+     Synchron(is)ierung
+  * "Pthreads und Unix" (S.145), besser formuliert
+  * "Pthreads und Unix" (S.146), (SIG)TERM/USR, besser formuliert
+  * "Pthreads und Signale" (S.147), besser formuliert, sigaction->Courier
+
+ -- Tomas Pospisek <tpo_deb@sourcepole.ch>  Tue, 18 Jan 2005 17:03:04 +0100
+
+Pthreads (1.3) unstable; urgency=low
+
+  * "Traditionelle Signalverarbeitung" (S.149), "Signalhandling und Threads"
+    (S.150): Listen anders formatiert
+  * "Signalhandling und Threads" (S.152): Grammatik
+  * "Threads in Signalhandlern" (S.152): Klärung
+  * "Threadsichere Bib-& Sysfunk" (S.160): Rechtschreibung
+  * "Scheduling Prioritäten und Domänen" (S.131): gelöscht - redundant
+  * redundante Titel (?) Box gelöscht
+  * Kapitelübersicht (S.6), Rechtschreibung
+  * "Warum Threads" (S.7), Rechtschreibung
+  * "Prozesslayout - zwei Threads" (S.12), Rechtschreibung
+  * "Was sind Threads" (S.13), Rechtschreibung
+  * "Konkurrentes Programmieren" (S.17), Rechtschreibung
+  * "Konkurrentes Programmieren" (S.18), fork() auf id = fork() erweitert
+  *                                    , bug korrigiert (falscher
+                                         rückgabewert!), PC eingeführt
+  * "Konkurrentes Programmieren" (S.19), Rechtschreibung
+
+ -- Tomas Pospisek <tpo_deb@sourcepole.ch>  Tue, 02 Nov 2004 12:16:15 +0100
+
+Pthreads (1.2) unstable; urgency=low
+
+  * pthread_mutex_timedlock hinzugefügt
+  * "Exit Status & Rückgabewert" (S.26): PTHREAD_CANCELED besser erklärt
+  * Linux-glibc PTHREAD_ Konstanten durch Posix Equivalent
+    _POSIX_THREAD_... ersetzt auf Seiten:
+    * "Mutexes und Prozesse" (S.78)
+    * "Thread Attribute" (S.95)
+    * "Scheduling von Pthreads" (S.123)
+    * "Priority Ceiling" (S.141)
+  * "Bankomat mit Threadpool" (S.90): Grammatik
+  * "Management von Pthreads" (S.93): Keys besser erklärt
+  * "Scheduling Prioritäten und Domänen" (S.124, S.127):
+    Beschreibung erweitert und verbessert
+  * "Scheduling Bereich und Domäne" (S.128, S.130): in Grafik
+    "Process" duch "Proc" ersetzt zwecks besserer Lesbarkeit
+  * "Benutzung von Policies und Prioritäten" (S.136): Grammatik
+  * "Benutzung von Policies und Prioritäten" (S.138): Func. Interface
+    korrigiert
+  * "Priority Ceiling" (S.141): Threads fett
+  * "Pthreads und Signale" (S.147): Klärung der Beschreibung
+  * S.135, S.136, S.141, S.142, S.143, S.147, S.149, S.151, S.155,
+    S.167: Konstanten in Courier Schrift
+  * "Scheduling bei Mutexen" (S.140), "Priority Ceiling" (S.141):
+    Tabellen ausgerichtet
+  * RELEASED
+
+ -- Tomas Pospisek <tpo_deb@sourcepole.ch>  Thu, 08 Jan 2004 11:29:17 +0100
+
+Pthreads (1.1) unstable; urgency=low
+
+  * Buffer Pseudo-Code korrigiert
+  * diverse Tipp- & Rechtrschreibefehler u.äh.
+  * sxd Format
+
+ -- Tomas Pospisek <tpo_deb@sourcepole.ch>  Thu, 20 Nov 2003 10:00:35 +0100
+
+Pthreads (1.0) unstable; urgency=low
+
+  * initial release
+
+ -- Tomas Pospisek <tpo_deb@sourcepole.ch>  Sun, 02 Feb 2003 00:00:00 +0100
+
+Local variables:
+mode: debian-changelog
+End:
